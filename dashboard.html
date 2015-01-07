@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8 wp-toolbar"  lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar"  lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>WordPress SVG Test</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel='stylesheet' href='http://local.wordpress.dev/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load=dashicons,admin-bar,wp-admin,buttons,wp-auth-check&amp;ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0.1' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='ie-css'  href='http://local.wordpress.dev/wp-admin/css/ie.min.css?ver=4.0.1' type='text/css' media='all' />
+<![endif]-->
+<style>
+svg {
+	width: 20px;
+	height: 100%;
+}
+
+div.wp-menu-image use,
+#wpadminbar .ab-item use {
+	fill: #999;
+}
+
+#adminmenu li:hover div.wp-menu-image use,
+#adminmenu li:hover #collapse-button use {
+	fill: red;
+}
+
+#adminmenu .current div.wp-menu-image use,
+#adminmenu .wp-has-current-submenu div.wp-menu-image use,
+#adminmenu a.current:hover div.wp-menu-image use,
+#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image use,
+#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image use {
+	fill: white;
+}
+
+#wpadminbar .ab-item svg {
+	width: 20px;
+	height: 32px;
+}
+</style>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"1","time":"1416942732","secure":""};/* ]]> */
+</script>
+<script type='text/javascript' src='http://local.wordpress.dev/wp-admin/load-scripts.php?c=1&amp;load%5B%5D=jquery-core,jquery-migrate,utils&amp;ver=4.0.1'></script>
+<script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#999","focus":"#2ea2cc","current":"#fff"}};</script>
+</head>
+<body class="wp-admin wp-core-ui no-js  tools-php auto-fold admin-bar branch-4 version-4-0-1 admin-color-fresh locale-en-us no-customize-support no-svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+<script type="text/javascript">
+	(function() {
+		var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+		request = true;
+
+		b[c] = b[c].replace( rcs, ' ' );
+		b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+	}());
+</script>
+
+<div id="wpwrap">
+
+	<div id="adminmenuback"></div>
+
+	<div id="adminmenuwrap">
+		<ul id="adminmenu" role="navigation">
+			<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" id="menu-dashboard">
+				<a href='index.php' class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" aria-haspopup="true">
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'>
+						<svg><use xlink:href="icons/sprite.svg#dashicons-dashboard"></use></svg>
+					</div>
+					<div class='wp-menu-name'>Dashboard</div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Dashboard</li>
+					<li class="wp-first-item"><a href='index.php' class="wp-first-item">Home</a></li>
+					<li><a href='update-core.php'>Updates <span class='update-plugins count-10' title='5 Plugin Updates, 5 Theme Updates'><span class='update-count'>10</span></span></a></li>
+				</ul>
+			</li>
+			<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+
+			<li class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" id="menu-posts">
+				<a href='edit.php' class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" aria-haspopup="true">
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-post"></use></svg></div>
+					<div class='wp-menu-name'>Posts</div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Posts</li>
+					<li class="wp-first-item"><a href='edit.php' class="wp-first-item">All Posts</a></li>
+					<li><a href='post-new.php'>Add New</a></li>
+					<li><a href='edit-tags.php?taxonomy=category'>Categories</a></li>
+					<li><a href='edit-tags.php?taxonomy=post_tag'>Tags</a></li>
+				</ul>
+			</li>
+			<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+				<a href='upload.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true">
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-media"></use></svg></div>
+					<div class='wp-menu-name'>Media</div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Media</li>
+					<li class="wp-first-item"><a href='upload.php' class="wp-first-item">Library</a></li>
+					<li><a href='media-new.php'>Add New</a></li>
+				</ul>
+			</li>
+			<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+				<a href='edit.php?post_type=page' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true">
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-page"></use></svg></div>
+					<div class='wp-menu-name'>Pages</div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Pages</li>
+					<li class="wp-first-item"><a href='edit.php?post_type=page' class="wp-first-item">All Pages</a></li>
+					<li><a href='post-new.php?post_type=page'>Add New</a></li>
+				</ul>
+			</li>
+			<li class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" id="menu-comments">
+				<a href='edit-comments.php' class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" >
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-comments"></use></svg></div>
+					<div class='wp-menu-name'>Comments <span class='awaiting-mod count-0'><span class='pending-count'>0</span></span></div>
+				</a>
+			</li>
+			<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+
+			<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+				<a href='themes.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" aria-haspopup="true">
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-appearance"></use></svg></div>
+					<div class='wp-menu-name'>Appearance</div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Appearance</li>
+					<li class="wp-first-item"><a href='themes.php' class="wp-first-item">Themes</a></li>
+					<li class="hide-if-no-customize"><a href='customize.php?return=%2Fwp-admin%2Ftools.php' class="hide-if-no-customize">Customize</a></li>
+					<li><a href='widgets.php'>Widgets</a></li>
+					<li><a href='nav-menus.php'>Menus</a></li>
+					<li><a href='themes.php?page=custom-header'>Header</a></li>
+					<li><a href='themes.php?page=custom-background'>Background</a></li>
+					<li><a href='theme-editor.php'>Editor</a></li>
+				</ul>
+			</li>
+			<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+				<a href='plugins.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" aria-haspopup="true">
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-plugins"></use></svg></div>
+					<div class='wp-menu-name'>Plugins <span class='update-plugins count-5'><span class='plugin-count'>5</span></span></div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Plugins <span class='update-plugins count-5'><span class='plugin-count'>5</span></span></li>
+					<li class="wp-first-item"><a href='plugins.php' class="wp-first-item">Installed Plugins</a></li>
+					<li><a href='plugin-install.php'>Add New</a></li>
+					<li><a href='plugin-editor.php'>Editor</a></li>
+				</ul>
+			</li>
+			<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+				<a href='users.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true">
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-users"></use></svg></div>
+					<div class='wp-menu-name'>Users</div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Users</li>
+					<li class="wp-first-item"><a href='users.php' class="wp-first-item">All Users</a></li>
+					<li><a href='user-new.php'>Add New</a></li>
+					<li><a href='profile.php'>Your Profile</a></li>
+				</ul>
+			</li>
+			<li class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-tools" id="menu-tools">
+				<a href='tools.php' class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-tools" >
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-tools"></use></svg></div>
+					<div class='wp-menu-name'>Tools</div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Tools</li>
+					<li class="wp-first-item current"><a href='tools.php' class="wp-first-item current">Available Tools</a></li>
+					<li><a href='import.php'>Import</a></li>
+					<li><a href='export.php'>Export</a></li>
+				</ul>
+			</li>
+			<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+				<a href='options-general.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" aria-haspopup="true">
+					<div class="wp-menu-arrow"><div></div></div>
+					<div class='wp-menu-image'><svg><use xlink:href="icons/sprite.svg#dashicons-admin-settings"></use></svg></div>
+					<div class='wp-menu-name'>Settings</div>
+				</a>
+				<ul class='wp-submenu wp-submenu-wrap'>
+					<li class='wp-submenu-head'>Settings</li>
+					<li class="wp-first-item"><a href='options-general.php' class="wp-first-item">General</a></li>
+					<li><a href='options-writing.php'>Writing</a></li>
+					<li><a href='options-reading.php'>Reading</a></li>
+					<li><a href='options-discussion.php'>Discussion</a></li>
+					<li><a href='options-media.php'>Media</a></li>
+					<li><a href='options-permalink.php'>Permalinks</a></li>
+				</ul>
+			</li>
+			<li id="collapse-menu" class="hide-if-no-js">
+				<div id="collapse-button" class="wp-menu-image">
+					<svg><use xlink:href="icons/sprite.svg#dashicons-admin-collapse"></use></svg>
+				</div>
+				<span>Collapse menu</span>
+			</li>
+		</ul>
+	</div>
+
+	<div id="wpcontent">
+
+		<div id="wpadminbar" class="nojq nojs" role="navigation">
+			<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+			<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Top navigation toolbar." tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+					<li id="wp-admin-bar-menu-toggle"><a class="ab-item" href="#">
+						<span class="ab-icon"></span>
+						<span class="screen-reader-text">Menu</span>
+					</a></li>
+					<li id="wp-admin-bar-wp-logo" class="menupop">
+						<a class="ab-item" aria-haspopup="true" href="http://local.wordpress.dev/wp-admin/about.php" title="About WordPress">
+							<svg><use xlink:href="icons/sprite.svg#dashicons-wordpress"></use></svg>
+						</a>
+						<div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+							<li id="wp-admin-bar-about"><a class="ab-item"  href="http://local.wordpress.dev/wp-admin/about.php">About WordPress</a></li>
+						</ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+							<li id="wp-admin-bar-wporg"><a class="ab-item"  href="https://wordpress.org/">WordPress.org</a></li>
+							<li id="wp-admin-bar-documentation"><a class="ab-item"  href="http://codex.wordpress.org/">Documentation</a></li>
+							<li id="wp-admin-bar-support-forums"><a class="ab-item"  href="https://wordpress.org/support/">Support Forums</a></li>
+							<li id="wp-admin-bar-feedback"><a class="ab-item"  href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
+						</ul></div>
+					</li>
+
+					<li id="wp-admin-bar-site-name" class="menupop">
+						<a class="ab-item"  aria-haspopup="true" href="http://local.wordpress.dev/">
+							<svg><use xlink:href="icons/sprite.svg#dashicons-admin-home"></use></svg>
+							<span class="ab-label">WordCamp Boston 2013</span>
+						</a>
+						<div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+							<li id="wp-admin-bar-view-site"><a class="ab-item"  href="http://local.wordpress.dev/">Visit Site</a></li>
+						</ul></div>
+					</li>
+					<li id="wp-admin-bar-updates">
+						<a class="ab-item"  href="http://local.wordpress.dev/wp-admin/update-core.php" title="5 Plugin Updates, 5 Theme Updates">
+							<svg><use xlink:href="icons/sprite.svg#dashicons-update"></use></svg>
+							<span class="ab-label">10</span>
+							<span class="screen-reader-text">5 Plugin Updates, 5 Theme Updates</span>
+						</a>
+					</li>
+					<li id="wp-admin-bar-comments">
+						<a class="ab-item"  href="http://local.wordpress.dev/wp-admin/edit-comments.php" title="0 comments awaiting moderation">
+							<span class="ab-icon"></span>
+							<span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span>
+						</a>
+					</li>
+					<li id="wp-admin-bar-new-content" class="menupop">
+						<a class="ab-item"  aria-haspopup="true" href="http://local.wordpress.dev/wp-admin/post-new.php" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a>
+						<div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+							<li id="wp-admin-bar-new-post"><a class="ab-item"  href="http://local.wordpress.dev/wp-admin/post-new.php">Post</a></li>
+							<li id="wp-admin-bar-new-media"><a class="ab-item"  href="http://local.wordpress.dev/wp-admin/media-new.php">Media</a></li>
+							<li id="wp-admin-bar-new-page"><a class="ab-item"  href="http://local.wordpress.dev/wp-admin/post-new.php?post_type=page">Page</a></li>
+							<li id="wp-admin-bar-new-user"><a class="ab-item"  href="http://local.wordpress.dev/wp-admin/user-new.php">User</a></li>
+						</ul></div>
+					</li>
+				</ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+					<li id="wp-admin-bar-my-account" class="menupop with-avatar">
+						<a class="ab-item"  aria-haspopup="true" href="http://local.wordpress.dev/wp-admin/profile.php" title="My Account">Howdy, admin <img alt='' src='http://0.gravatar.com/avatar/a441be8d44b16f7c5047d3d019d3ac39?s=26&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D26&amp;r=G' class='avatar avatar-26 photo' height='26' width='26' /></a>
+						<div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+							<li id="wp-admin-bar-user-info">
+								<a class="ab-item" tabindex="-1" href="http://local.wordpress.dev/wp-admin/profile.php">
+									<img alt='' src='http://0.gravatar.com/avatar/a441be8d44b16f7c5047d3d019d3ac39?s=64&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D64&amp;r=G' class='avatar avatar-64 photo' height='64' width='64' />
+									<span class='display-name'>admin</span>
+								</a>
+							</li>
+							<li id="wp-admin-bar-edit-profile"><a class="ab-item"  href="http://local.wordpress.dev/wp-admin/profile.php">Edit My Profile</a></li>
+							<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://local.wordpress.dev/wp-login.php?action=logout&#038;_wpnonce=973d1a5373">Log Out</a></li>
+						</ul></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- END ADMIN BAR -->
+
+
+		<!-- CONTENT -->
+
+		<div id="wpbody">
+			<div id="wpbody-content" aria-label="Main content" tabindex="0">
+				<div class="wrap">
+					<h2>SVG HTML Test</h2>
+				</div>
+			</div><!-- wpbody-content -->
+		</div><!-- wpbody -->
+
+	</div><!-- wpcontent -->
+
+	<div id="wpfooter">
+		<p id="footer-left" class="alignleft"><span id="footer-thankyou">Thank you for creating with <a href="https://wordpress.org/">WordPress</a>.</span></p>
+		<p id="footer-upgrade" class="alignright">Version 4.0.1</p>
+		<div class="clear"></div>
+	</div>
+
+	<script type='text/javascript'>
+	/* <![CDATA[ */
+	var commonL10n = {"warnDelete":"You are about to permanently delete the selected items.\n  'Cancel' to stop, 'OK' to delete."};var wpAjax = {"noPerm":"You do not have permission to do that.","broken":"An unidentified error has occurred."};var quicktagsL10n = {"closeAllOpenTags":"Close all open tags","closeTags":"close tags","enterURL":"Enter the URL","enterImageURL":"Enter the URL of the image","enterImageDescription":"Enter a description of the image","fullscreen":"fullscreen","toggleFullscreen":"Toggle fullscreen mode","textdirection":"text direction","toggleTextdirection":"Toggle Editor Text Direction"};var adminCommentsL10n = {"hotkeys_highlight_first":"","hotkeys_highlight_last":"","replyApprove":"Approve and Reply","reply":"Reply"};var _wpCustomizeLoaderSettings = {"url":"http:\/\/local.wordpress.dev\/wp-admin\/customize.php","isCrossDomain":false,"browser":{"mobile":false,"ios":false},"l10n":{"saveAlert":"The changes you made will be lost if you navigate away from this page."}};var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/local.wordpress.dev\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};var plugininstallL10n = {"plugin_information":"Plugin Information:","ays":"Are you sure you want to install this plugin?"};var heartbeatSettings = {"nonce":"9cf769c166"};var authcheckL10n = {"beforeunload":"Your session has expired. You can log in again from this page or go to the login page.","interval":"180"};/* ]]> */
+	</script>
+	<script type='text/javascript' src='http://local.wordpress.dev/wp-admin/load-scripts.php?c=1&amp;load%5B%5D=hoverIntent,common,admin-bar,svg-painter,heartbeat,wp-auth-check&amp;ver=4.0.1'></script>
+
+</div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+</body>
+</html>

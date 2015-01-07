@@ -1,0 +1,14 @@
+{
+  "name": "WP-Dashboard-SVG",
+  "version": "0.1.0",
+  "description": "A test of SVG-ifying the WordPress Admin",
+  "author": "Kelly Dwan",
+  "license": "GPLv2 or later",
+  "repository": "git@github.com:ryelle/WP-Dashboard-SVG.git",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-svgstore": "^0.4.1",
+    "matchdep": "~0.1.2"
+  }
+}
