@@ -39,8 +39,25 @@ div.wp-menu-image use,
 }
 
 #wpadminbar .ab-item svg {
+	float: left;
 	width: 20px;
 	height: 32px;
+	margin-right: 5px;
+}
+
+#wpadminbar li:hover use {
+	fill: red;
+}
+
+#wpadminbar #wp-admin-bar-wp-logo svg {
+	margin-right: 0;
+}
+
+/* Get rid of existing CSS-added icons (from top bar) */
+#wpadminbar #adminbarsearch:before,
+#wpadminbar .ab-icon:before,
+#wpadminbar .ab-item:before {
+	display: none;
 }
 </style>
 
@@ -258,12 +275,15 @@ var userSettings = {"url":"\/","uid":"1","time":"1416942732","secure":""};/* ]]>
 					</li>
 					<li id="wp-admin-bar-comments">
 						<a class="ab-item"  href="#" title="0 comments awaiting moderation">
-							<span class="ab-icon"></span>
+							<svg><use xlink:href="icons/sprite.svg#dashicons-admin-comments"></use></svg>
 							<span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span>
 						</a>
 					</li>
 					<li id="wp-admin-bar-new-content" class="menupop">
-						<a class="ab-item"  aria-haspopup="true" href="#" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a>
+						<a class="ab-item"  aria-haspopup="true" href="#" title="Add New">
+							<svg><use xlink:href="icons/sprite.svg#dashicons-plus"></use></svg>
+							<span class="ab-label">New</span>
+						</a>
 						<div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
 							<li id="wp-admin-bar-new-post"><a class="ab-item"  href="#">Post</a></li>
 							<li id="wp-admin-bar-new-media"><a class="ab-item"  href="#">Media</a></li>
