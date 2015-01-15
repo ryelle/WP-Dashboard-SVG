@@ -3,24 +3,12 @@ WP Dashboard SVG
 
 A demo of using an SVG sprite for the WordPress admin icons.
 
-### Outline
+> What does this process look like?
 
-> A quick draft of what should (probably) happen here. Note that these things can happen in tandem.
+SVGs live in the `icons/src` directory, and can be edited directly here. (No more waiting for font merges)
 
-**[Done]** Generate a single SVG sprite using [svgstore](https://www.npmjs.com/package/grunt-svgstore) in Grunt, pulled from the [SVGs of Dashicons](https://github.com/melchoyce/dashicons/tree/master/svg). Check out the generated demo (icons/sprite-demo.html) for a quick intro to using the individual SVGs from the sprite.
+Generate a single SVG sprite using [svgstore](https://www.npmjs.com/package/grunt-svgstore) in Grunt, pulled from the source folder. _Check out the generated demo (icons/sprite-demo.html) for a quick intro to using the individual SVGs from the sprite._
 
-**[In Progress]** Replace the current markup for dashicons in the admin menu with SVG's `use`, so we reference the external SVG sprite.
+Replace the current markup for dashicons in the admin menu with SVG's `use`, so we reference the external SVG sprite.
 
-Browser test the proof of concept & add in IE fallback
-
-Build out a demo plugin to test methods of adding pages, as a visual backwards compatibility test.
-
-Adjust the Dashicons workflow to generate individual SVGs, named the icon name (the filename generates the ID in the sprite). *This may be a multi-step process?*
-
-Move SVG-ification into core, where menus are generated.
-
-Clean up CSS around dashicons-the-font (`.dashicons`), and set up for `.dashicon` the SVG.
-
-Could there also be call for a "`get_icon`" function, which would be simpler than writing out the `<svg>` every time? Could also be used to standardize the way `submit_button` was/is.
-
-
+Check it out "in action" (static HTML) here: http://ryelle.github.io/WP-Dashboard-SVG/
