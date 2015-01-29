@@ -1,0 +1,64 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Icons Preview!</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				color: #444;
+				width: auto;
+				background-size: 10px 10px;
+				text-align: center;
+			}
+			.container {
+				margin: 0 auto;
+				padding: 2em;
+				max-width: 850px;
+			}
+			.icon-container {
+				margin: 0 2% 50px;
+				width: 29%;
+				float: left;
+			}
+			.example-container {
+				background: #c5c5c5;
+				padding: 30px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.example-container > div {
+				margin: 0 auto;
+			}
+			@media (max-width: 600px) {
+				.icon-container {
+					width: 98%;
+				}
+			}
+		</style>
+		<script>
+			{{{loaderText}}}
+			{{{embedText}}}
+			{{#with cssFiles}}
+			grunticon(["{{svg}}", "{{png}}", "{{fallback}}"], grunticon.svgLoadedCallback);
+		</script>
+		<noscript><link href="{{fallback}}" rel="stylesheet"></noscript>
+{{/with}}
+	</head>
+	<body>
+
+		<h1>Every Dashicon</h1>
+		<div class="container">
+			{{#each icons}}
+				{{#with this}}
+					<div class="icon-container">
+						<pre><code>{{prefix}}{{name}}:</code></pre>
+						<div class="example-container">
+							<div {{selectorType}}="{{selectorString}}{{name}}" style="width: {{width}}px; height: {{height}}px;" data-grunticon-embed ></div>
+						</div>
+					</div>
+				{{/with}}
+			{{/each}}
+		</div>
+</body>
+</html>

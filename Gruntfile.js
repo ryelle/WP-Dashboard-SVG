@@ -7,32 +7,88 @@ module.exports = function(grunt) {
 	// Project configuration.
 	grunt.initConfig({
 
+		// minifies SVGs
+		svgmin: {
+			options: {
+				plugins: [
+				{
+					removeViewBox: false
+				}, {
+					removeUselessStrokeAndFill: false
+				}
+				]
+			},
+			dist: {
+				files: [{
+					expand: true,
+					cwd: 'icons/src',
+					src: ['*.svg'],
+					dest: 'icons/.tmp',
+
+					// Adds color variables defined in Grunticon task
+					ext: '.svg'
+				}]
+			},
+			fallbacks: {
+				files: [{
+					expand: true,
+					cwd: 'icons/src',
+					src: ['*.svg'],
+					dest: 'icons/.tmp-fallbacks',
+
+					// Adds color variables defined in Grunticon task
+					ext: '.colors-blue-white.svg'
+				}]
+			}
+		},
+
+		grunticon: {
+			myIcons: {
+				files: [{
+					expand: true,
+					cwd: 'icons/.tmp-fallbacks',
+					src: ['*.svg'],
+					dest: "icons/"
+				}],
+				options: {
+					cssprefix: ".dashicons-",
+					defaultWidth: "20px",
+					defaultHeight: "20px",
+					colors: {
+						blue: "#0074a2",
+						white: "#ffffff"
+					},
+					previewTemplate: "icons/preview-template.hbs"
+				}
+			}
+		},
+
 		svgstore: {
 			options: {
-				prefix : 'dashicons-',
+				prefix: "dashicons-",
 				cleanup: ['fill','stroke'],
-				includedemo: true,
 				svg: {
 					xmlns: 'http://www.w3.org/2000/svg',
 					'xmlns:xlink': 'http://www.w3.org/1999/xlink',
-					viewBox : '0 0 0 0'
+					viewBox: '0 0 20 20'
 				}
 			},
 			dev: {
-				src: [ 'svg/*.svg' ],
-				dest: 'about.svg'
+				files: {
+					'icons/dashicons.svg': [ 'icons/.tmp/*.svg' ]
+				}
 			}
 		},
 
 		watch: {
 			svg: {
 				files: ['icons/src/**'],
-				tasks: ['svgstore:dev']
+				tasks: ['svgmin', 'svgstore', 'grunticon']
 			}
 		}
 	});
 
 	// Default task.
-	grunt.registerTask('default', ['svgstore:dev']);
+	grunt.registerTask('default', ['svgmin', 'svgstore', 'grunticon']);
 
 };
