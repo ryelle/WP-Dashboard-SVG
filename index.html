@@ -9,6 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>WordPress SVG Test</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="js/svg4everybody.ie8.js"></script>
 <link rel='stylesheet' href='http://redradar.net/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load=dashicons,admin-bar,wp-admin,buttons,wp-auth-check&amp;ver=4.0.1' type='text/css' media='all' />
 <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0.1' type='text/css' media='all' />
 <!--[if lte IE 7]>
@@ -21,12 +22,16 @@ svg {
 }
 
 div.wp-menu-image use,
-#wpadminbar .ab-item use {
+#wpadminbar .ab-item use,
+div.wp-menu-image path,
+#wpadminbar .ab-item path {
 	fill: #999;
 }
 
 #adminmenu li:hover div.wp-menu-image use,
-#adminmenu li:hover #collapse-button use {
+#adminmenu li:hover #collapse-button use,
+#adminmenu li:hover div.wp-menu-image path,
+#adminmenu li:hover #collapse-button path {
 	fill: red;
 }
 
@@ -34,7 +39,12 @@ div.wp-menu-image use,
 #adminmenu .wp-has-current-submenu div.wp-menu-image use,
 #adminmenu a.current:hover div.wp-menu-image use,
 #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image use,
-#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image use {
+#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image use,
+#adminmenu .current div.wp-menu-image path,
+#adminmenu .wp-has-current-submenu div.wp-menu-image path,
+#adminmenu a.current:hover div.wp-menu-image path,
+#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image path,
+#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image path {
 	fill: white;
 }
 
@@ -45,7 +55,8 @@ div.wp-menu-image use,
 	margin-right: 5px;
 }
 
-#wpadminbar li:hover use {
+#wpadminbar li:hover use,
+#wpadminbar li:hover path {
 	fill: red;
 }
 
